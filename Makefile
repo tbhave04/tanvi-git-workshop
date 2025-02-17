@@ -6,4 +6,4 @@ setup:
 	uv run hello.py
 
 test:
-	uv run -m unittest discover -s tests -p "*_test.py"
+	uv run -m unittest competition/test_code.py
