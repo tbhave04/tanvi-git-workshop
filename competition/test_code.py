@@ -59,25 +59,12 @@ class TestCompetition(unittest.TestCase):
         self.assertEqual(c.remove_all(
             [1, 1, 1, 3, -0.1, 4, 6], [-2, 1, 1, 2, 1, 1]), [3, -0.1, 4, 6])
 
-    def test_alphabet(self):
-        self.assertNotIn(" ", c.alphabet())
-        self.assertIn("a", c.alphabet())
-        self.assertIn("z", c.alphabet())
-        self.assertIn("A", c.alphabet())
-        self.assertIn("Z", c.alphabet())
-
     def test_vowels(self):
         self.assertNotIn(" ", c.vowels())
         self.assertIn("a", c.vowels())
         self.assertNotIn("z", c.vowels())
         self.assertIn("A", c.vowels())
         self.assertNotIn("Z", c.vowels())
-
-    def test_remove_constants(self):
-        self.assertEqual(c.remove_constantants(""), "")
-        self.assertEqual(c.remove_constantants("sKY"), "")
-        self.assertEqual(c.remove_constantants("hello THERE!"), "eo EE!")
-        self.assertEqual(c.remove_constantants("OOOOOooooo"), "OOOOOooooo")
 
     def tests_remove_most_freq_vowel(self):
         self.assertEqual(c.remove_most_freq_vowel(""), "")

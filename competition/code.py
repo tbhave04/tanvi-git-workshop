@@ -1,5 +1,4 @@
 import random
-import string
 import math
 
 # ======================================================
@@ -43,19 +42,8 @@ def remove_all(lst, bad):
     pass
 
 
-def alphabet():
-    """ Returns list of characters in the alphabet, both upper and lowercase. """
-    pass
-
-
 def vowels():
     """ Returns list of vowels, including upper and lowercase. """
-    pass
-
-
-def remove_constantants(s):
-    """ Return copy of string s with all constantants removed.
-        s may contain lower and upper case letters and non-alphabetic chars. """
     pass
 
 
